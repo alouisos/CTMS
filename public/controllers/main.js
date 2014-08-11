@@ -11,9 +11,18 @@ angular.module('MyApp')
       'McMaster University Hamilton', 'Mount Sinai Hospital Toronto', 'Royal Adelaide Hospital', 'Canberra Hospital', 'North Shore Hospital', 
       'Auckland City Hospital', 'Waikato Hospital', 'Kitano Hospital', 'Chiba Hospital', 'University of Miyazaki', 'Okayama University', 'Teikyo University'];
 
+    $scope.types = ['Unanswered', 'Answered']
+
+   
     $scope.headingTitle = 'Queries';
 
     $scope.shows = Show.query();
+
+     $scope.filterByType = function(type) { 
+        $scope.shows = Show.query({ type : type }); 
+        $scope.headingTitle =  type + " Queries"; 
+    }; 
+
 
     $scope.filterBySite = function(site) {
       $scope.shows = Show.query({ site: site });

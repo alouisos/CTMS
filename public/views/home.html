@@ -5,6 +5,10 @@
       <li ng-repeat="site in sites">
         <span ng-click="filterBySite(site)">{{site}}</span>
       </li>
+        <ul class="types btn btn-lg btn-block btn-success">
+        <li ng-repeat ="type in types">
+        <span ng-click="filterByType(type)">{{type}}</span>
+      </li>
     </ul>
   </div>
 </div>
