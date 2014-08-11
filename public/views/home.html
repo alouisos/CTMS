@@ -25,11 +25,11 @@
       <div class="row show-list">
         <div class="col-xs-12 col-md-12" ng-repeat="show in shows | filter:query | orderBy:'rating':true">
           <a href="/shows/{{show._id}}">
-            <img class="img-rounded" ng-src="{{show.poster}}" width="100%"/>
+          <!--   <img class="img-rounded" ng-src="{{show.poster}}" width="100%"/> -->
           </a>
           <div class="text-center">
-            <a href="/shows/{{show._id}}">{{show.name}}</a>
-            <p class="text-muted">Episodes: {{show.episodes.length}}</p>
+           <!--  <a href="/shows/{{show._id}}">{{show.name}}</a>
+            <p class="text-muted">Episodes: {{show.episodes.length}}</p> -->
           </div>
         </div>
       </div>

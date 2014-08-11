@@ -20,7 +20,7 @@ var sugar = require('sugar');
 var nodemailer = require('nodemailer');
 var _ = require('lodash');
 
-var showSchema = new mongoose.Schema({
+var querySchema = new mongoose.Schema({
   _id: Number,
   name: String,
   airsDayOfWeek: String,
